@@ -4,14 +4,16 @@ public class LembreteDTO {
 
     private Integer id;
     private String conteudo;
+    private String email;
     private String prioridade;
 
     public LembreteDTO() {
     }
 
-    public LembreteDTO(Integer id, String conteudo, String prioridade) {
+    public LembreteDTO(Integer id, String conteudo, String email, String prioridade) {
         this.id = id;
         this.conteudo = conteudo;
+        this.email = email;
         this.prioridade = prioridade;
     }
 
@@ -19,23 +21,15 @@ public class LembreteDTO {
         return id;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
     public String getConteudo() {
         return conteudo;
     }
 
-    public void setConteudo(String conteudo) {
-        this.conteudo = conteudo;
+    public String getEmail() {
+        return email;
     }
 
     public String getPrioridade() {
         return prioridade;
-    }
-
-    public void setPrioridade(String prioridade) {
-        this.prioridade = prioridade;
     }
 }

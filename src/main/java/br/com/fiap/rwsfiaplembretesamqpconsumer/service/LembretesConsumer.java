@@ -12,7 +12,7 @@ public class LembretesConsumer implements MessageListener {
     public void onMessage(Message message) {
         Gson gson = new Gson();
         LembreteDTO obj = gson.fromJson(new String(message.getBody()), LembreteDTO.class);
-        EmailService.sendEmail(obj.getConteudo(), obj.getPrioridade());
+        EmailService.sendEmail(obj.getEmail(), obj.getConteudo(), obj.getPrioridade());
         System.out.println("Consuming Message - " + new String(message.getBody()));
     }
 }
