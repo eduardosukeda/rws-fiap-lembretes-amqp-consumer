@@ -10,7 +10,6 @@ Microserviço com o objetivo de ser consumidor de um produtor (https://github.co
 
 ## Spring Framework
 
-- Spring Web
 - Spring AMQP (RabbitMQ)
 
 
